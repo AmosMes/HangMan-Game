@@ -1,6 +1,13 @@
 import random
 from hangman_words import word_list
 from HangManArt import stages, logo
+import os
+
+def clearConsole():
+    command = 'clear'
+    if os.name in ('nt', 'dos'):  # If Machine is running on Windows, use cls
+        command = 'cls'
+    os.system(command)
 
 print(logo)
 game_end = False
@@ -17,7 +24,8 @@ for _ in range(word_lenght):
 #Looping with while to iterate every aspect of the game.
 while not game_end:
     guess = input(f"Please choose your letter: ").lower()
-
+    clearConsole()
+    
     if guess in display:
         print(f"You already guessed this letter {guess}.")
 
