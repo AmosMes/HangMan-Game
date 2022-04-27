@@ -15,7 +15,7 @@ lives = 6
 chosen_word = random.choice(word_list)
 word_lenght = len(chosen_word)
 # Testing the random choice .
-print(chosen_word)
+#print(chosen_word)
 
 display = []
 for _ in range(word_lenght):
