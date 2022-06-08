@@ -1,5 +1,5 @@
 import random
-from hangman_words import word_list
+from hangman_word import word_list
 from HangManArt import stages, logo
 import os
 
